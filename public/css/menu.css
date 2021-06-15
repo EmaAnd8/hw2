@@ -1,0 +1,72 @@
+#menu {
+    display: none;
+}
+
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(26,50,96);
+    margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+    nav a{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+#links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#links a{
+    margin: 20px;
+    font-size: 20px;
+    text-transform:uppercase;
+
+}
+#links img {
+    width: 35px;
+    height: 35px;
+}
+#modal-view_1 a:visited,#modal-view_1 a:hover,#modal-view_1 a:link{
+    color:rgb(26,50,96);
+    text-decoration: none;
+}
+
+
+#modal-view_1{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255,255,255,0.9);
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    color:white ;
+
+
+
+}
+
+
+#modal-view_1.hidden{
+    display: none;
+}
